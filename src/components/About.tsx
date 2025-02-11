@@ -101,8 +101,9 @@ const About = () => {
                 Financial Management
               </h2>
               <p className='text-md md:text-lg text-black'>
-                Passionate about finance, I develop budgeting tools, loan repayment calculators, and investment analyzers.
-              </p>
+  Passionate about finance, I develop budgeting tools, loan repayment calculators, and investment analyzers.
+</p>
+
             </div>
           </div>
         </motion.div>
