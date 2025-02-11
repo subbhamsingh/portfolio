@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-
 import book from '../assets/book.png';
 import pc from '../assets/pc.png';
 import card from '../assets/card.png';
@@ -39,7 +38,7 @@ const About = () => {
                 Education
               </h2>
               <p className='text-md md:text-lg text-black'>
-                Bachelor's degree in Electronics & Communication, focusing on software development and engineering principles.
+                Bachelor degree in Electronics & Communication, focusing on software development and engineering principles.
               </p>
             </div>
           </div>
