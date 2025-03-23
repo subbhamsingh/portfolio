@@ -4,15 +4,15 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import React from 'react'
 
-import proj1 from '../assets/proj1.jpg';
-import proj2 from '../assets/proj2.jpg'; 
-import proj3 from '../assets/proj3.png';
-import proj4 from '../assets/proj4.jpg';
+import proj1 from '../assets/journey-ai.png';
+import proj2 from '../assets/npm.png'; 
+import proj3 from '../assets/chatapp.png';
+import proj4 from '../assets/codebits.png';
 
 const projects = [
     {
         title: "JourneyAI",
-        desc: "Developed an AI-powered trip planner that generates personalized itineraries, reducing trip planning time by 40%. Integrated Gemini AI for real-time location insights and smart recommendations.",
+        desc: "Engineered an AI-powered trip planner that automates itinerary generation, reducing manual planning efforts by 30% using Gemini AI. Enhanced satisfaction by 25% with real-time location insights and smart recommendations.",
         devstack: "React.js, Gemini AI, Firebase, TailwindCSS",
         link: "https://journey-ai-alpha.vercel.app/",
         git: "https://github.com/subbhamsingh/JourneyAI",
@@ -20,26 +20,26 @@ const projects = [
     },
     {
         title: "MERN Boilerplate Generator (NPM Package)",
-        desc: "Developed and published an NPM package that automates 100% of the setup process for MERN stack projects, reducing initial configuration time by 80%.",
+        desc: "Developed an NPM package to automate the MERN stack project setup, reducing initial configuration time by 80%. Achieved over 100+ weekly downloads, demonstrating high developer adoption.",
         devstack: "Express.js, MongoDB, React, Node.js",
         link: "https://www.npmjs.com/package/mern-boilerplate-generator",
         git: "https://github.com/subbhamsingh/mern-boilerplate",
         src: proj2
     },
     {
-        title: "Expense Tracker Analysis Tool",
-        desc: "Developed a web-based expense tracker with budget reports and interactive data visualizations using Chart.js, improving financial analysis by 60%.",
-        devstack: "HTML, CSS, JavaScript, Chart.js",
-        link: "https://subbhamsingh.github.io/ExpenseTracker/",
-        git: "https://github.com/subbhamsingh/ExpenseTracker",
+        title: "Real-Time Chat Application",
+        desc: "Built a real-time chat app with secure authentication and live messaging using Socket.io. Reduced message delivery time by 90% and prevented 95% of unauthorized access with JWT authentication.",
+        devstack: "MERN Stack, Socket.io, Redux, JWT",
+        link: "https://github.com/subbhamsingh/chat-app",
+        git: "https://github.com/subbhamsingh/chat-app",
         src: proj3
     },
     {
-        title: "Data Structure Library",
-        desc: "Developed a React-based interactive visualization tool for Stack and Queue data structures, enhancing learning by 70%.",
-        devstack: "HTML, CSS, JavaScript, React.js",
-        link: "https://subbhamsingh.github.io/stack-queue/",
-        git: "https://github.com/subbhamsingh/stack-queue",
+        title: "CodeBits",
+        desc: "Developed a code snippet management tool, enhancing code reusability by 40%. Optimized database performance using Prisma ORM, achieving 60% faster queries and reducing initial load time by 40%.",
+        devstack: "Next.js, Prisma, TypeScript, Tailwind CSS",
+        link: "https://github.com/subbhamsingh/CodeBits",
+        git: "https://github.com/subbhamsingh/CodeBits",
         src: proj4
     },
 ]

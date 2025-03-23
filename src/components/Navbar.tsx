@@ -1,20 +1,43 @@
-
-
-
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const navLinks = [
+  { title: "Home", path: "#hero" },
   { title: "About", path: "#about" },
-  { title: "Portfolio", path: "#portfolio" },
+  { title: "Projects", path: "#portfolio" },
+  { title: "Skills", path: "#skills" },
+  { title: "Resume", path: "#resume" },
   { title: "Contact", path: "#contact" },
 ];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
+  const handleScrollToSection = (path) => {
+    const section = document.querySelector(path);
+    if (section) {
+      const headerHeight = document.querySelector('.fixed').offsetHeight;
+      window.scrollTo({ top: section.offsetTop - headerHeight, behavior: 'smooth' });
+      setNav(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const path = window.location.hash;
+      if (path) {
+        handleScrollToSection(path);
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange();
+
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   return (
     <div className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md">
@@ -52,8 +75,8 @@ const Navbar = () => {
         <ul className="text-4xl font-semibold text-center space-y-8">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.path} onClick={() => setNav(false)}>
-                {link.title}
+              <Link href={link.path}>
+                <p className="cursor-pointer" onClick={() => setNav(false)}>{link.title}</p>
               </Link>
             </li>
           ))}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { SiLeetcode, SiCodechef } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -15,13 +16,17 @@ const Footer = () => {
              className="hover:text-blue-400 transition-all duration-300">
             <FaLinkedin size={26} />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" 
-             className="hover:text-blue-300 transition-all duration-300">
-            <FaTwitter size={26} />
+          <a href="https://leetcode.com/u/rajveersinghvns2021/" target="_blank" rel="noopener noreferrer" 
+             className="hover:text-yellow-400 transition-all duration-300">
+            <SiLeetcode size={26} />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" 
-             className="hover:text-pink-400 transition-all duration-300">
-            <FaInstagram size={26} />
+          <a href="https://github.com/subbhamsingh" target="_blank" rel="noopener noreferrer" 
+             className="hover:text-gray-400 transition-all duration-300">
+            <FaGithub size={26} />
+          </a>
+          <a href="https://www.codechef.com/users/rajveersingh40" target="_blank" rel="noopener noreferrer" 
+             className="hover:text-purple-400 transition-all duration-300">
+            <SiCodechef size={26} />
           </a>
         </div>
 
