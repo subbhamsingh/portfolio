@@ -16,10 +16,12 @@ const navLinks = [
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  const handleScrollToSection = (path) => {
-    const section = document.querySelector(path);
-    if (section) {
-      const headerHeight = document.querySelector('.fixed').offsetHeight;
+  const handleScrollToSection = (path: string) => {
+    const section = document.querySelector(path) as HTMLElement | null;
+    const header = document.querySelector('.fixed') as HTMLElement | null;
+
+    if (section && header) {
+      const headerHeight = header.offsetHeight;
       window.scrollTo({ top: section.offsetTop - headerHeight, behavior: 'smooth' });
       setNav(false);
     }
